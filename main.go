@@ -1,9 +1,15 @@
 package main
 
-func add(a int, b int) int {
-	return a + b
+import "fmt"
+
+func greet(name string) string {
+	return fmt.Sprintf("Hello, Mr " + name)
 }
+
 func main() {
-	x := add(1, 2)
-	println(x)
+	var x string
+	fmt.Println("Enter your name: ")
+	fmt.Scanln(&x)
+	fmt.Println(greet(x))
+
 }
