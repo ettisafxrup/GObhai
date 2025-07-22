@@ -2,14 +2,12 @@ package main
 
 import "fmt"
 
-func greet(name string) string {
-	return fmt.Sprintf("Hello, Mr " + name)
-}
-
 func main() {
-	var x string
-	fmt.Println("Enter your name: ")
+	var x int
+	var y int
+	fmt.Println("Enter first number: ")
 	fmt.Scanln(&x)
-	fmt.Println(greet(x))
-
+	fmt.Println("Enter second number: ")
+	fmt.Scanln(&y)
+	fmt.Println("Your Add Result:", add(x, y))
 }
